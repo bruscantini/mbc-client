@@ -1,8 +1,9 @@
 <nav class="navbar navbar-toggleable-md navbar-light bg-faded" id="main-nav-bar">
-  <div class="container">
-    <button class="navbar-toggler navbar-toggler-right" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed" aria-controls="collapsingNavbar" aria-expanded="false" aria-label="Toggle navigation">
+
+  <button class="navbar-toggler navbar-toggler-right" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed" aria-controls="collapsingNavbar" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
+  <div class="container">
     <a class="navbar-brand" href="#">Miami Beach Club</a>
     <div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse" id="collapsingNavbar">
       <div class="navbar-nav mr-auto">
@@ -12,7 +13,6 @@
         <a class="nav-item nav-link" routerLink="/common-areas" routerLinkActive="active">Common Areas</a>
         <a class="nav-item nav-link" routerLink="/contact" routerLinkActive="active">Contact Us</a>
         <a class="nav-item nav-link" routerLink="/rules" routerLinkActive="active">Rules & Regulations</a>
-
       </div>
     </div>
   </div>

@@ -1,11 +1,18 @@
+#app-container {
+  margin: 0;
+}
+
 #carousel-col {
   margin: 0 auto;
 }
 
 #main-carousel {
   outline: none;
+  overflow: auto;
   img {
     width: 100%;
+    max-width: 2560px;
     height: auto;
+    max-height: 90vh;
   }
 }
