@@ -11,10 +11,10 @@ import { RouterModule, Routes } from '@angular/router';
 
 const appRoutes: Routes = [
   // { path: 'apartment/:id', component: ApartmentComponent },
-  // {
-  //   path: 'apartments',
-  //   component: AllApartmentsComponent
-  // },
+  {
+    path: 'apartments',
+    component: AllApartmentsComponent
+  },
   {
     path: 'landing',
     component: LandingComponent
@@ -23,21 +23,24 @@ const appRoutes: Routes = [
     path: '',
     redirectTo: '/landing',
     pathMatch: 'full'
-  },
+  }
   // { path: '**', component: PageNotFoundComponent }
 ];
 
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { LandingComponent } from './landing/landing.component';
+import { AllApartmentsComponent } from './all-apartments/all-apartments.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
-    LandingComponent
+    LandingComponent,
+    AllApartmentsComponent
   ],
   imports: [
+    RouterModule.forRoot(appRoutes),
     BrowserModule,
     FormsModule,
     HttpModule,
