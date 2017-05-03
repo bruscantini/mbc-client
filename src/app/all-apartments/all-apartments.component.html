@@ -1,3 +1,5 @@
-<p>
-  all-apartments works!
-</p>
+<div *ngFor="let apartment of apartments">
+  <div class="apartment-container">
+    <span>{{apartment.name}}</span>
+  </div>
+</div>

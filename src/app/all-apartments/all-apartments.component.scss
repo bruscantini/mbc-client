@@ -1,0 +1,22 @@
+.apartment-container {
+  width: 80%;
+  height: 200px;
+  margin: 20px auto;
+  background-color: #E3F09B;
+  text-align: center;
+}
+
+.apartment-container:hover {
+  animation: boxLift 0.2s ease-in-out forwards;
+}
+
+@keyframes boxLift {
+  0% {
+  }
+
+  100% {
+    transform: translateX(-5px);
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 5px #888888;
+  }
+}
